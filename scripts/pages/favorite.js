@@ -8,7 +8,7 @@ export default class Favorite {
 		this.favorite = document.querySelector(elSelector);
 		this.store = store;
 		this.emptyMessage = new StatusElement().createMessage({
-			imgSrc: '../../assets/empty.png',
+			imgSrc: './assets/empty.png',
 			title: 'Список избранного пуст',
 			description: 'Добавляйте изображения, нажимая на звездочки',
 			className: 'full',

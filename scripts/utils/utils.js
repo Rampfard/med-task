@@ -13,8 +13,6 @@ export const showFullImg = (imgId, fullImageSrc) => {
 		const deltaW = firstRect.width / (lastRect.width || 600);
 		const deltaH = firstRect.height / (lastRect.height || 600);
 
-		console.log(deltaX, deltaY);
-
 		change();
 
 		lastEl.animate(
