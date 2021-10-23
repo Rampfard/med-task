@@ -27,7 +27,7 @@ export default class Catalog extends Component {
 		this.statusElementsCreator = new StatusElement();
 		this.loader = this.statusElementsCreator.createLoading();
 		this.errorMessage = this.statusElementsCreator.createMessage({
-			imgSrc: '../../assets/error.png',
+			imgSrc: './assets/error.png',
 			title: 'Сервер не отвечает',
 			description: 'Уже работаем над этим',
 			className: 'wide',

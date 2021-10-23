@@ -18,7 +18,7 @@ export default class StatusElement {
 	createLoading() {
 		const loader = document.createElement('div');
 		const spinner = document.createElement('img');
-		spinner.src = '../../assets/loader.gif';
+		spinner.src = './assets/loader.gif';
 		loader.classList.add('loader');
 
 		loader.append(spinner);
