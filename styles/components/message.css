@@ -1,0 +1,47 @@
+.message {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.wide {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	padding-top: 3.5rem;
+}
+
+.message__info {
+	text-align: center;
+	padding-right: 1rem;
+}
+
+.message__img {
+	margin-bottom: 2rem;
+	margin-right: 0.2rem;
+}
+
+.message__title {
+	font-size: 22px;
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.message__description {
+	font-size: 1.2rem;
+}
+
+.loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 320px;
+}
+
+.loader img {
+	height: 3rem;
+	width: 3rem;
+}

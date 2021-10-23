@@ -1,0 +1,36 @@
+@media (max-width: 460px) {
+	.main {
+		padding-top: 1rem;
+	}
+
+	.list-item {
+		position: relative;
+		padding: 0.7rem 0;
+		padding-left: 1.5rem;
+	}
+	.list-item.active > .list {
+		display: block;
+		padding-left: 1.2rem;
+	}
+
+	.list-item.active > .photo-list {
+		display: grid;
+		gap: 1rem;
+	}
+
+	.list-item__info p {
+		margin-left: 0.6rem;
+	}
+
+	.user-list {
+		font-size: 1rem;
+		padding: 1rem 0;
+	}
+
+	.circle {
+		position: absolute;
+		width: 1.5rem;
+		left: 0;
+		height: 1.5rem;
+	}
+}

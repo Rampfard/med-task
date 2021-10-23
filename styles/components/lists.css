@@ -1,0 +1,140 @@
+.list {
+	font-size: 1.5rem;
+	padding-top: 1rem;
+	font-weight: 500;
+}
+
+.list-item {
+	padding: 1.6rem 0;
+	display: flex;
+}
+
+.list-item__info {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.list-item__info p {
+	margin-left: 24px;
+}
+
+.list-item > .list {
+	display: none;
+}
+
+.list-item.active > .list {
+	display: block;
+	padding-left: 3rem;
+}
+
+.list-item > .message {
+	display: none;
+}
+
+.list-item.active > .message {
+	display: flex;
+}
+
+.list-item.active > .photo-list,
+.favorite-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 150px);
+	gap: 2.6rem;
+}
+
+.favorite-photo {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	text-align-last: left;
+	padding: 0;
+}
+
+.favorite-photo__img {
+	border-radius: 8px;
+	margin-bottom: 0.8rem;
+	cursor: pointer;
+}
+
+.favorite-photo__descr {
+	font-size: 0.9rem;
+	line-height: 1.4rem;
+	font-weight: 400;
+	margin: 0;
+	color: var(--gray-color);
+}
+
+.user-list .list-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.user-list .list {
+	font-size: 1rem;
+}
+
+.photo-item {
+	max-width: 150px;
+	position: relative;
+	height: auto;
+	padding: 0;
+
+	cursor: pointer;
+}
+
+.photo-item__img {
+	border-radius: 4px;
+}
+
+.favorite-btn {
+	position: absolute;
+	outline: none;
+	border: none;
+	border-radius: 50%;
+	background-image: url('../../assets/star_empty.png');
+	width: 2rem;
+	height: 2rem;
+	background-color: #fff;
+	top: 0.5rem;
+	right: 0.5rem;
+	cursor: pointer;
+}
+
+.favorite-btn.active,
+.favorite-btn:hover {
+	background-image: url('../../assets/star_active.png');
+}
+
+.circle {
+	position: relative;
+	display: flex;
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+	background-color: var(--blue-color);
+}
+
+.circle:before,
+.circle:after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	content: '';
+	height: 2px;
+	width: 50%;
+	background-color: #fff;
+	transition: all 0.3s ease-out;
+}
+
+.circle:before {
+	transform: translate(-50%, -50%);
+}
+
+.circle:after {
+	transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.list-item.active > .list-item__info > .circle:after {
+	transform: translate(-50%, -50%) rotate(0);
+}

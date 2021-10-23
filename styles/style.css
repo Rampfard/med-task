@@ -1,0 +1,45 @@
+@import './global.css';
+
+/* components */
+@import './components/header.css';
+@import './components/lists.css';
+@import './components/message.css';
+
+.favorite,
+.catalog {
+	padding-top: 4rem;
+	height: 80vh;
+}
+
+.catalog {
+	padding: 0;
+}
+
+.detail {
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(25, 25, 25, 0);
+	box-shadow: 0 0 30px #000;
+	display: flex;
+	transition: background 0.3s linear;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	padding: 5vmin;
+}
+
+[data-state='detail'] .detail {
+	opacity: 1;
+	background: rgba(25, 25, 25, 0.85);
+	z-index: 20;
+}
+
+[data-state='detail'] .detail img {
+	opacity: 1;
+}

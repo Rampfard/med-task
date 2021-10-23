@@ -1,0 +1,33 @@
+.nav-list {
+	display: flex;
+	justify-content: space-between;
+
+	width: 100%;
+}
+
+.nav-item {
+	cursor: pointer;
+	text-align: center;
+	width: 49%;
+	font-size: 1.1rem;
+	border-radius: 8px;
+}
+
+.nav-link {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	padding: 1rem;
+	text-decoration: none;
+	color: inherit;
+}
+
+.nav-item:hover {
+	color: var(--blue-color);
+	background-color: var(--light-blue-color);
+}
+
+.nav-item.active {
+	color: var(--blue-color);
+	background-color: var(--light-blue-color);
+}
