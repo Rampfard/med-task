@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+	.detail img {
+		max-width: 300px;
+	}
+}
+
 @media (max-width: 460px) {
 	.main {
 		padding-top: 1rem;
@@ -32,5 +38,9 @@
 		width: 1.5rem;
 		left: 0;
 		height: 1.5rem;
+	}
+
+	.favorite-btn {
+		top: 1rem;
 	}
 }
